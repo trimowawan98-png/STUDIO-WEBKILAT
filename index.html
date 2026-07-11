@@ -3,118 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STUDIO WEBKILAT | Premium Digital Craftsmanship</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <style>
-        :root { --bg: #050505; --gold: #d4af37; --glass: rgba(255, 255, 255, 0.03); --text: #ffffff; }
-        * { margin: 0; padding: 0; box-sizing: border-box; cursor: none; }
-        body { background: var(--bg); color: var(--text); font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; scroll-behavior: smooth; }
-        .cursor { width: 20px; height: 20px; border: 1px solid var(--gold); border-radius: 50%; position: fixed; pointer-events: none; z-index: 9999; }
-        
-        nav { position: fixed; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 100; backdrop-filter: blur(15px); border-bottom: 1px solid rgba(255,255,255,0.05); }
-        nav a { color: #fff; text-decoration: none; font-size: 0.9rem; margin-left: 20px; transition: 0.3s; }
-        nav a:hover { color: var(--gold); }
-        
-        #hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle at center, #1a1608 0%, #050505 70%); }
-        h1 { font-size: clamp(3rem, 8vw, 6rem); margin-bottom: 20px; }
-        .gold-text { color: var(--gold); }
-        
-        .section-title { text-align: center; margin-bottom: 50px; font-size: 2.5rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 80px 5%; }
-        
-        .glass-card { background: var(--glass); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); padding: 40px; border-radius: 30px; transition: 0.4s; text-align: center; }
-        .glass-card:hover { transform: translateY(-10px); border-color: var(--gold); }
-        .popular { border: 1px solid var(--gold); transform: scale(1.05); }
-        
-        .faq-item { margin-bottom: 20px; padding: 20px; border-bottom: 1px solid #333; }
-        .cta-btn { padding: 15px 40px; border: 1px solid var(--gold); color: var(--gold); background: transparent; border-radius: 50px; font-weight: 700; text-decoration: none; transition: 0.3s; display: inline-block; }
-        .cta-btn:hover { background: var(--gold); color: #000; }
-        footer { padding: 50px; text-align: center; border-top: 1px solid #222; }
-    </style>
+    <title>STUDIO WEBKILAT | Crafting Digital Luxury for Corporate Brands</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts untuk kesan Premium -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="cursor"></div>
-
-    <nav>
-        <div class="logo" style="font-weight: 700; letter-spacing: 2px;">WEBKILAT</div>
-        <div>
-            <a href="#about">About</a><a href="#services">Services</a><a href="#pricing">Pricing</a>
-            <a href="#portfolio">Portfolio</a><a href="#faq">FAQ</a><a href="mailto:trimowawan89@gmail.com">Contact</a>
-        </div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">STUDIO <span>WEBKILAT</span></div>
+        <button class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Beranda</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="services.html">Layanan</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
     </nav>
 
-    <section id="hero">
-        <h1 id="typing-text">Crafting Digital Luxury.</h1>
-        <p>Solusi website premium untuk brand yang menuntut kesempurnaan.</p>
-    </section>
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Crafting Digital Luxury for Corporate Brands</h1>
+            <p>Kami mentransformasi kehadiran digital bisnis Anda menjadi sebuah mahakarya eksklusif yang memikat korporasi global.</p>
+            <a href="mailto:trimowawan89@gmail.com" class="btn-primary">Konsultasi</a>
+        </div>
+    </header>
 
-    <section id="about" style="padding: 100px 5%;">
-        <div class="glass-card">
-            <h2>The Vision</h2>
-            <p style="max-width: 600px; margin: 20px auto;">Kami membangun identitas digital eksklusif dengan presisi tinggi. Setiap baris kode dirancang untuk memberikan pengalaman terbaik bagi audiens Anda.</p>
+    <!-- SERVICES SECTION -->
+    <section class="section container">
+        <h2 class="section-title">Layanan Utama Kami</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Corporate Web Development</h3>
+                <p>Kami merancang website perusahaan premium dengan performa kilat dan arsitektur keamanan tinggi. Setiap baris kode dioptimalkan untuk merefleksikan prestise identitas korporasi Anda.</p>
+                <ul class="benefit-list">
+                    <li>✓ Desain Eksklusif (Tanpa Template Pasaran)</li>
+                    <li>✓ Kecepatan Akses & Keamanan Tingkat Tinggi</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Enterprise System Integration</h3>
+                <p>Sinkronisasi sistem internal bisnis Anda ke platform digital berbasis web yang seamless dan efisien. Memudahkan skalabilitas operasional perusahaan dengan integrasi dasbor analitik real-time.</p>
+                <ul class="benefit-list">
+                    <li>✓ Automasi Proses Bisnis</li>
+                    <li>✓ Sistem Fleksibel & Mudah Dikembangkan</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>High-End UI/UX Design</h3>
+                <p>Pengalaman visual mewah yang dirancang khusus untuk memanjakan calon investor dan klien premium. Kami fokus pada estetika minimalis modern namun sarat fungsionalitas kelas atas.</p>
+                <ul class="benefit-list">
+                    <li>✓ Riset Pengguna Berdasarkan Target Pasar</li>
+                    <li>✓ Prototipe Interaktif Sebelum Produksi</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <section id="services">
-        <h2 class="section-title">Services</h2>
-        <div class="grid">
-            <div class="glass-card"><i class="fas fa-gem fa-2x gold-text"></i><h3>Corporate Sites</h3></div>
-            <div class="glass-card"><i class="fas fa-shopping-bag fa-2x gold-text"></i><h3>E-Commerce</h3></div>
-            <div class="glass-card"><i class="fas fa-paint-brush fa-2x gold-text"></i><h3>Digital Branding</h3></div>
+    <!-- PORTFOLIO SECTION -->
+    <section class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Project Unggulan</h2>
+            <div class="portfolio-grid-3">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600" alt="Corporate Project 1">
+                    <div class="p-info">
+                        <h3>Borneo Gold Mining Co.</h3>
+                        <p>Website korporat multi-bahasa dengan sistem laporan saham real-time.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=600" alt="Corporate Project 2">
+                    <div class="p-info">
+                        <h3>Kalteng Investment Portal</h3>
+                        <p>Platform dashboard satu pintu untuk manajemen investasi daerah.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=600" alt="Corporate Project 3">
+                    <div class="p-info">
+                        <h3>Mahakarya Konstruksi</h3>
+                        <p>Digital catalog premium dengan teknologi interaktif 3D rendering.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="pricing">
-        <h2 class="section-title">Pricing</h2>
-        <div class="grid">
-            <div class="glass-card"><h3>Basic</h3><h1 class="gold-text">5jt</h1><p>Landing page elegan.</p></div>
-            <div class="glass-card popular"><h3>Pro</h3><h1 class="gold-text">15jt</h1><p>Full-stack experience.</p><br><span style="background:var(--gold); color:#000; padding:5px 10px; border-radius:5px; font-size:0.8rem;">MOST POPULAR</span></div>
-            <div class="glass-card"><h3>Enterprise</h3><h1 class="gold-text">30jt</h1><p>Custom advanced features.</p></div>
+    <!-- TESTIMONI SECTION -->
+    <section class="section container">
+        <h2 class="section-title">Apa Kata Klien Kami</h2>
+        <div class="testimonial-grid">
+            <div class="testi-card">
+                <p class="quote">"STUDIO WEBKILAT berhasil menerjemahkan visi kemewahan brand kami ke dalam bentuk website yang sangat responsif. Pelayanan profesional kelas satu."</p>
+                <h4>Hendra Wijaya</h4>
+                <span>Direktur, Borneo Mining Group</span>
+            </div>
+            <div class="testi-card">
+                <p class="quote">"Website portal investasi kami kini jauh lebih modern dan dipercaya oleh investor asing berkat sentuhan premium dari tim Webkilat Palangkaraya."</p>
+                <h4>Dr. Amara Siregar</h4>
+                <span>Kepala Hubungan Publik, KIP</span>
+            </div>
+            <div class="testi-card">
+                <p class="quote">"Sangat tepat memilih paket Enterprise. Ekspektasi kami yang tinggi terpenuhi dengan hasil coding yang bersih, cepat, dan tim support yang siaga."</p>
+                <h4>Rian Pratama</h4>
+                <span>CEO, Mahakarya Holding</span>
+            </div>
         </div>
     </section>
 
-    <section id="portfolio">
-        <h2 class="section-title">Portfolio</h2>
-        <div class="grid">
-            <div class="glass-card"><h3>Project Alpha</h3></div>
-            <div class="glass-card"><h3>Project Beta</h3></div>
-            <div class="glass-card"><h3>Project Gamma</h3></div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>STUDIO WEBKILAT</h3>
+                <p>Palangkaraya, Kalimantan Tengah, Indonesia</p>
+                <p>Email: <a href="mailto:trimowawan89@gmail.com">trimowawan89@gmail.com</a></p>
+            </div>
+            <div class="footer-socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+                <a href="#">Behance</a>
+            </div>
         </div>
-    </section>
-
-    <section id="faq" style="padding: 100px 5%;">
-        <h2 class="section-title">FAQ</h2>
-        <div style="max-width: 800px; margin: auto;">
-            <div class="faq-item"><h3>Berapa lama waktu pengerjaan?</h3><p>Tergantung kompleksitas, biasanya 2-4 minggu.</p></div>
-            <div class="faq-item"><h3>Apakah termasuk maintenance?</h3><p>Ya, kami memberikan dukungan pasca-peluncuran.</p></div>
-            <div class="faq-item"><h3>Bagaimana cara memulai?</h3><p>Cukup kirimkan detail proyek Anda ke email kami.</p></div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 STUDIO WEBKILAT. All Corporate Rights Reserved.</p>
         </div>
-    </section>
+    </footer>
 
-    <section id="contact" style="padding: 100px 5%; text-align: center;">
-        <h2 style="font-size: 3rem; margin-bottom: 20px;">Ready for the upgrade?</h2>
-        <a href="mailto:trimowawan89@gmail.com" class="cta-btn">trimowawan89@gmail.com</a>
-    </section>
-
-    <footer><p>&copy; 2026 STUDIO WEBKILAT. All Rights Reserved.</p></footer>
-
-    <script>
-        document.addEventListener('mousemove', (e) => { gsap.to('.cursor', { x: e.clientX - 10, y: e.clientY - 10, duration: 0.1 }); });
-        
-        const text = "Crafting Digital Luxury.";
-        let i = 0;
-        function type() { if(i < text.length) { document.getElementById('typing-text').innerHTML = text.substring(0, i+1) + '<span class="gold-text">|</span>'; i++; setTimeout(type, 100); } }
-        window.onload = type;
-
-        gsap.registerPlugin(ScrollTrigger);
-        document.querySelectorAll('section').forEach(section => {
-            gsap.from(section.children, { scrollTrigger: { trigger: section, start: "top 80%" }, y: 50, opacity: 0, duration: 1, stagger: 0.2 });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-
