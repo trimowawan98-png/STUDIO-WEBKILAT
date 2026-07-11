@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami | STUDIO WEBKILAT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">STUDIO <span>WEBKILAT</span></div>
+        <button class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="services.html">Layanan</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html" class="active">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section class="section container page-header">
+        <h1>Mulai Proyek Anda</h1>
+        <p class="subtitle">Diskusikan Kebutuhan Digital Korporasi Anda Bersama Tim Ahli Kami</p>
+    </section>
+
+    <section class="section container">
+        <div class="contact-wrapper">
+            <!-- CONTACT FORM -->
+            <div class="contact-form-container">
+                <h2>Kirim Pesan</h2>
+                <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST" class="contact-form">
+                    <!-- Catatan: Untuk demo mailto bisa pakai action="mailto:trimowawan89@gmail.com" 
+                         Tapi disarankan pakai formspree gratis biar langsung masuk ke email rapi -->
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap / Perusahaan</label>
+                        <input type="text" id="name" name="name" placeholder="Contoh: PT. Borneo Sukses" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Alamat Email Resmi</label>
+                        <input type="email" id="email" name="_replyto" placeholder="nama@perusahaan.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Detail Kebutuhan Proyek</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tuliskan gambaran singkat sistem atau website yang ingin dibangun..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Kirim Penawaran</button>
+                </form>
+            </div>
+
+            <!-- CONTACT INFO -->
+            <div class="contact-info-container">
+                <h2>Kantor Pusat</h2>
+                <div class="info-block">
+                    <h3>Alamat</h3>
+                    <p>Jl. Jend. Sudirman No. 89, Palangkaraya,<br>Kalimantan Tengah, 74874<br>Indonesia</p>
+                </div>
+                <div class="info-block">
+                    <h3>Korespondensi Digital</h3>
+                    <p>Email: <a href="mailto:trimowawan89@gmail.com" class="gold-link">trimowawan89@gmail.com</a></p>
+                </div>
+                <div class="info-block">
+                    <h3>Waktu Operasional</h3>
+                    <p>Senin - Jumat: 08:00 - 17:00 WIB<br>Sabtu & Minggu: Sesuai Janji Temu Terjadwal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 STUDIO WEBKILAT. All Corporate Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
