@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | STUDIO-WEBKILAT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .portfolio-grid img { filter: grayscale(80%); transition: all 0.4s ease; }
+        .portfolio-grid img:hover { filter: grayscale(0%) drop-shadow(0 0 15px rgba(212,175,55,0.5)); transform: scale(1.03); }
+    </style>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">STUDIO-WEBKILAT</a>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="portofolio.html" class="text-gold">Portofolio</a>
+                <a href="kontak.html">Kontak</a>
+                <button class="btn btn-gold" onclick="toggleChat()">Chat AI</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Portofolio -->
+    <section class="section container" style="padding-top: 150px; padding-bottom: 60px;">
+        <div style="text-align: center; margin-bottom: 60px;" data-aos="fade-up">
+            <h1 style="font-size: 3.5rem;">Karya <span class="text-gold">Kami</span></h1>
+            <p style="color: #A0A0A0; font-size: 1.2rem;">Setiap website dibuat dengan standar premium dan performa tinggi.</p>
+        </div>
+        
+        <!-- Grid Portofolio -->
+        <div class="grid-3 portfolio-grid">
+            <div class="card" style="padding:0; overflow:hidden;" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Corporate" style="width: 100%; height: 250px; object-fit: cover;">
+                <div style="padding:20px;">
+                    <h4>Corporate Profile</h4>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: 15px; font-size: 0.85rem; padding: 10px;" onclick="openChatWithText('Halo, saya mau pesan website seperti Corporate Profile di portofolio. Paket apa yang cocok?')">Tanya AI Buat Seperti Ini</button>
+                </div>
+            </div>
+            
+            <div class="card" style="padding:0; overflow:hidden;" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80" alt="Ecommerce" style="width: 100%; height: 250px; object-fit: cover;">
+                <div style="padding:20px;">
+                    <h4>E-Commerce Toko</h4>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: 15px; font-size: 0.85rem; padding: 10px;" onclick="openChatWithText('Halo, saya mau buat website E-Commerce seperti di portofolio. Bagaimana caranya?')">Tanya AI Buat Seperti Ini</button>
+                </div>
+            </div>
+            
+            <div class="card" style="padding:0; overflow:hidden;" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=800&q=80" alt="Agency" style="width: 100%; height: 250px; object-fit: cover;">
+                <div style="padding:20px;">
+                    <h4>Agency Landing Page</h4>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: 15px; font-size: 0.85rem; padding: 10px;" onclick="openChatWithText('Halo, saya butuh Landing Page untuk Agency. Berapa harganya?')">Tanya AI Buat Seperti Ini</button>
+                </div>
+            </div>
+            
+            <div class="card" style="padding:0; overflow:hidden;" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80bc?auto=format&fit=crop&w=800&q=80" alt="Portfolio" style="width: 100%; height: 250px; object-fit: cover;">
+                <div style="padding:20px;">
+                    <h4>Portfolio Pribadi</h4>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: 15px; font-size: 0.85rem; padding: 10px;" onclick="openChatWithText('Halo, saya mau bikin website portfolio pribadi. Pilih paket yang mana?')">Tanya AI Buat Seperti Ini</button>
+                </div>
+            </div>
+            
+            <div class="card" style="padding:0; overflow:hidden;" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Dashboard" style="width: 100%; height: 250px; object-fit: cover;">
+                <div style="padding:20px;">
+                    <h4>Sistem Dashboard</h4>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: 15px; font-size: 0.85rem; padding: 10px;" onclick="openChatWithText('Halo, apa bisa membuat sistem dashboard kustom?')">Tanya AI Buat Seperti Ini</button>
+                </div>
+            </div>
+            
+            <div class="card" style="padding:0; overflow:hidden;" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80" alt="Restaurant" style="width: 100%; height: 250px; object-fit: cover;">
+                <div style="padding:20px;">
+                    <h4>Website Restoran</h4>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: 15px; font-size: 0.85rem; padding: 10px;" onclick="openChatWithText('Halo, saya punya usaha F&B dan ingin buat website. Panduannya bagaimana?')">Tanya AI Buat Seperti Ini</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h3 class="text-gold" style="margin-bottom: 20px;">STUDIO-WEBKILAT</h3>
+                <p style="color: #A0A0A0;">Solusi website cepat, premium, dan otomatis dengan teknologi AI.</p>
+            </div>
+            <div>
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="layanan.html">Layanan & Harga</a></li>
+                    <li><a href="portofolio.html">Portofolio</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Garansi 14 Hari</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Hubungi Kami</h4>
+                <p style="color: #A0A0A0; margin-bottom: 10px;">Email: trimowawan89@gmail.com</p>
+                <button class="btn btn-outline" style="padding: 8px 16px; font-size: 0.9rem;" onclick="toggleChat()">Chat AI CS</button>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 STUDIO-WEBKILAT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        lucide.createIcons();
+    </script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
