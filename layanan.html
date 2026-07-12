@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paket & Harga | STUDIO-WEBKILAT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">STUDIO-WEBKILAT</a>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="layanan.html" class="text-gold">Layanan</a>
+                <a href="portofolio.html">Portofolio</a>
+                <a href="kontak.html">Kontak</a>
+                <button class="btn btn-gold" onclick="toggleChat()">Chat AI</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pricing Section -->
+    <section class="section container" style="padding-top: 150px;">
+        <div style="text-align: center; margin-bottom: 80px;" data-aos="fade-up">
+            <h1 style="font-size: 3.5rem;">Pilih <span class="text-gold">Paket</span></h1>
+            <p style="color: #A0A0A0; font-size: 1.2rem;">Harga transparan, hasil premium. Selesai dalam 10 hari kerja.</p>
+        </div>
+
+        <div class="grid-3">
+            <!-- Paket 1 -->
+            <div class="card card-pricing" data-aos="fade-up">
+                <h3>Landing Page</h3>
+                <div class="price">Rp1.500.000</div>
+                <ul>
+                    <li><i data-lucide="check" class="text-gold"></i> 1 Halaman Premium</li>
+                    <li><i data-lucide="check" class="text-gold"></i> Responsif Mobile</li>
+                    <li><i data-lucide="check" class="text-gold"></i> Gratis Domain & Hosting 1 Thn</li>
+                    <li><i data-lucide="check" class="text-gold"></i> Tombol WhatsApp</li>
+                </ul>
+                <button class="btn btn-outline" style="width: 100%;" onclick="openChatWithText('Saya mau pesan paket Landing Page Rp1.500.000')">Pesan via AI</button>
+            </div>
+
+            <!-- Paket 2 -->
+            <div class="card card-pricing" style="border-color: var(--gold); transform: scale(1.05);" data-aos="fade-up" data-aos-delay="100">
+                <div class="badge-populer">TERPOPULER</div>
+                <h3>Company Profile</h3>
+                <div class="price">Rp3.500.000</div>
+                <ul>
+                    <li><i data-lucide="check" class="text-gold"></i> Maks 5 Halaman</li>
+                    <li><i data-lucide="check" class="text-gold"></i> Setup SEO Dasar</li>
+                    <li><i data-lucide="check" class="text-gold"></i> Gratis Domain & Hosting 1 Thn</li>
+                    <li><i data-lucide="check" class="text-gold"></i> Email Bisnis Profesional</li>
+                    <li><i data-lucide="check" class="text-gold"></i> Integrasi Google Maps</li>
+                </ul>
+                <button class="btn btn-gold" style="width: 100%;" onclick="openChatWithText('Saya mau pesan paket Company Profile Rp3.500.000')">Pesan via AI</button>
+            </div>
+
+            <!-- Paket 3 -->
+            <div class="card card-pricing" data-aos="fade-up" data-aos-delay="200">
+                <h3>E-Commerce</h3>
+                <div class="price">Rp7.500.000</div>
+                <ul>
+                    <li><i data-lucide="check" class="text-gold"></i> Fitur Keranjang Belanja</li>
+                    <li><i data-lucide="check" class="text-gold"></i> Payment Gateway (Otomatis)</li>
+                    <li><i data-lucide="check" class="text-gold"></i> Setup Ongkir Otomatis</li>
+                    <li><i data-lucide="check" class="text-gold"></i> Upload 20 Produk Awal</li>
+                    <li><i data-lucide="check" class="text-gold"></i> Dashboard Manajemen</li>
+                </ul>
+                <button class="btn btn-outline" style="width: 100%;" onclick="openChatWithText('Saya mau pesan paket E-Commerce Rp7.500.000')">Pesan via AI</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kenapa Lepas Tangan? -->
+    <section class="section container">
+        <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 60px;" data-aos="fade-up">Kenapa Bisa <span class="text-gold">Lepas Tangan?</span></h2>
+        <div class="grid-3" style="text-align: center;">
+            <div data-aos="fade-up">
+                <div style="background: var(--card); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 2rem; font-weight: 700; color: var(--gold); border: 2px solid var(--gold);">1</div>
+                <h3>Kami Buatkan</h3>
+                <p style="color: #A0A0A0; margin-top: 10px;">Anda isi brief, kami kerjakan desain, coding, hingga live dalam 10 hari.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div style="background: var(--card); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 2rem; font-weight: 700; color: var(--gold); border: 2px solid var(--gold);">2</div>
+                <h3>Serah Terima & Panduan</h3>
+                <p style="color: #A0A0A0; margin-top: 10px;">Akses penuh diberikan ke Anda beserta video panduan penggunaan.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200">
+                <div style="background: var(--card); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 2rem; font-weight: 700; color: var(--gold); border: 2px solid var(--gold);">3</div>
+                <h3>Chatbot Membantu</h3>
+                <p style="color: #A0A0A0; margin-top: 10px;">Sistem AI kami siap melayani pelanggan Anda di website selama 24 jam.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section container">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 60px;" data-aos="fade-up">Pertanyaan <span class="text-gold">Umum</span></h2>
+            
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">Apakah sistem pembayarannya harus lunas di awal? <i data-lucide="chevron-down"></i></div>
+                <div class="faq-answer"><p style="padding-top: 10px;">Tidak. Anda cukup membayar DP 50% untuk memulai pengerjaan, dan sisa 50% dilunasi setelah website selesai 100% dan siap serah terima.</p></div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="50">
+                <div class="faq-question">Bagaimana proses serah terimanya? <i data-lucide="chevron-down"></i></div>
+                <div class="faq-answer"><p style="padding-top: 10px;">Kami akan memberikan seluruh akses (cPanel, Dashboard Admin) beserta video tutorial eksklusif cara mengelola website Anda sendiri.</p></div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="faq-question">Apakah ada garansi? <i data-lucide="chevron-down"></i></div>
+                <div class="faq-answer"><p style="padding-top: 10px;">Tentu. Kami memberikan garansi perbaikan bug dan error selama 14 hari kerja setelah website diserahterimakan.</p></div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                <div class="faq-question">Apakah Domain dan Hosting sudah termasuk? <i data-lucide="chevron-down"></i></div>
+                <div class="faq-answer"><p style="padding-top: 10px;">Ya! Semua paket sudah termasuk gratis Domain (.com / .id / lainnya) dan Hosting super cepat selama 1 tahun pertama.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- (Sama seperti footer index.html, dihilangkan demi ringkasnya contoh) -->
+        <div class="copyright" style="padding-bottom: 40px; text-align: center;">&copy; 2026 STUDIO-WEBKILAT. All rights reserved.</div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        lucide.createIcons();
+
+        // FAQ Logic
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
