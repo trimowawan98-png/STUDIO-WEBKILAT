@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | STUDIO-WEBKILAT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">STUDIO-WEBKILAT</a>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="portofolio.html">Portofolio</a>
+                <a href="kontak.html" class="text-gold">Kontak</a>
+                <button class="btn btn-gold" onclick="toggleChat()">Chat AI</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Kontak -->
+    <section class="section container" style="padding-top: 150px; min-height: 80vh; display: flex; align-items: center;">
+        <div class="grid-2" style="align-items: center; width: 100%;">
+            
+            <div data-aos="fade-right">
+                <h1 style="font-size: 3.5rem; margin-bottom: 20px;">Mari <span class="text-gold">Berdiskusi</span></h1>
+                <p style="color: #A0A0A0; font-size: 1.2rem; margin-bottom: 40px;">Sesuai komitmen kami: "Kamu Desain. Chatbot yang Layani."<br>Silakan tanyakan apapun ke Asisten AI kami secara instan, 24 jam penuh tanpa menunggu antrean.</p>
+                
+                <div style="margin-bottom: 30px; display: flex; align-items: center; gap: 15px;">
+                    <i data-lucide="mail" class="text-gold" style="width: 24px; height: 24px;"></i>
+                    <span style="font-size: 1.1rem;">trimowawan89@gmail.com</span>
+                </div>
+                
+                <div style="margin-bottom: 40px; display: flex; align-items: center; gap: 15px;">
+                    <i data-lucide="map-pin" class="text-gold" style="width: 24px; height: 24px;"></i>
+                    <span style="font-size: 1.1rem;">Palangkaraya, Kalimantan Tengah, Indonesia</span>
+                </div>
+            </div>
+
+            <div class="card" style="text-align: center; padding: 60px 40px; border-color: var(--gold); background: linear-gradient(145deg, #1A1A1A, #0f0f0f);" data-aos="fade-left">
+                <i data-lucide="bot" class="text-gold" style="width: 80px; height: 80px; margin-bottom: 20px;"></i>
+                <h3 style="font-size: 2rem; margin-bottom: 15px;">Tanya AI Kami Sekarang</h3>
+                <p style="color: #A0A0A0; margin-bottom: 30px;">Tanya harga, proses pengerjaan, atau langsung lakukan pemesanan dalam hitungan detik.</p>
+                <button class="btn btn-gold" style="font-size: 1.2rem; padding: 20px 40px; width: 100%; display: flex; justify-content: center; align-items: center; gap: 10px;" onclick="openChatWithText('Halo, saya ingin bertanya seputar layanan pembuatan website.')">
+                    <i data-lucide="message-square"></i> Mulai Percakapan
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h3 class="text-gold" style="margin-bottom: 20px;">STUDIO-WEBKILAT</h3>
+                <p style="color: #A0A0A0;">Solusi website cepat, premium, dan otomatis dengan teknologi AI.</p>
+            </div>
+            <div>
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="layanan.html">Layanan & Harga</a></li>
+                    <li><a href="portofolio.html">Portofolio</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Garansi 14 Hari</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Hubungi Kami</h4>
+                <p style="color: #A0A0A0; margin-bottom: 10px;">Email: trimowawan89@gmail.com</p>
+                <button class="btn btn-outline" style="padding: 8px 16px; font-size: 0.9rem;" onclick="toggleChat()">Chat AI CS</button>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 STUDIO-WEBKILAT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        lucide.createIcons();
+    </script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
